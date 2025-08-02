@@ -13,5 +13,12 @@ Configured backup and recovery point for an **Ubuntu VM** using the Azure Portal
 
 ![Recovery service vault](screenshots/recovery-services-vault.png)
 
-#### Backup Enabled
+![Backup](screenshots/backup-confirm.png)
+
+### Backup Enabled
 ![Backup](screenshots/backup.png)
+
+![Backup](screenshots/backup-items.png)
+
+![Backup](screenshots/backup-job-details.png)
+
