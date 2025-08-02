@@ -4,21 +4,30 @@ Implemented scoped access for VM recovery operations using Azure Role-Based Acce
 
 ## User & Role Setup
 
-- Created a **custom group** (`BackupAdmins`) and added a user
+- Created a **custom group** (`BackupAdmins`) with Backup  and added a user
+  
   ![Admins](screenshots/backupAdmins-members.png)
+  
 - Created a **test user** in Microsoft Entra ID with only Reader access
+  
   ![Roles](screenshots/backup-contributor-role.png)
 
 ## Deleted and Recovered VM
+
   ![vm delete](screenshots/delete-vm.png)
+
   
-BackupAdmins group member is permitted to restore VM
+ - BackupAdmins group member is permitted to restore VM
+
 ![recovery-permitted](screenshots/restore-vm-settings.png)  
 
-Backup completed and a new VM is created by restoring old VM
+
+- Backup completed and a new VM is created by restoring old VM
+
   ![New VM](screenshots/recovered-vm.png)  
   
-- Attempted VM recovery with test user — restore blocked due to missing permissions
+ - VM recovery with test user — restore blocked due to missing permissions
+ 
 >  **Error Received**  
 ![access-denied](screenshots/test-user-access-denied.png)
 
